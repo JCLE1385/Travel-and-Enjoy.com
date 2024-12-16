@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url("landscape-nature-sky-672358.jpg");
+    background-size: cover;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    flex-direction: column; 
+}
+:root{
+    --text-color: #fff;
+    --bg-color:#252424;
+    --main-color: #ffa343;
+
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+form {
+    background: transparent;
+    width: 100%;
+    max-width: 400px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid#ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus {
+    border-color: var(--bg-color);
+    outline: none;
+}
+form .btn{
+    display: inline-block;
+    padding: 13px 40px;
+    background: var(--main-color);
+    color: #252424;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+form .btn:hover{
+    transform: translateX(10px);
+    border: 2px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+}
+
+
+
+</style>
+<body>
+    <header>
+        <h1>Hey Traveler!</h1>
+    </header>
+    <form action="/submit-form" method="post">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" placeholder="Enter your first name..." required><br>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" placeholder="Enter your last name..." required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email..." required><br>
+        
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone_number" placeholder="Enter your phone number..." required><br>
+        
+        <button class="btn" onclick="window.location.href='index.html'">Let's Go!!!</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Tours in Sorsogon</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    :root {
+        --text-color: #fff;
+        --bg-color: #252424;
+        --main-color: #ffa343;
+        --h1-font: 6rem;
+        --h2-font: 3rem;
+        --h3-font: 2rem;
+        --p-font: 1rem;
+    }
+    
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background: var(--bg-color);
+        color: var(--text-color);
+        padding: 20px 10%;
+        text-align: center;
+        transition: all .5s ease;
+    }
+    
+    header h2 {
+        font-size: var(--h2-font);
+        margin-bottom: 10px;
+    }
+    
+    header p {
+        font-size: var(--p-font);
+        color: #ffffffab;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 20px 10%;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image img {
+        width: 100%;           
+        max-width: 350px;       
+        height: auto;          
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+    
+    .image img:hover {
+        transform: scale(1.05);
+    }
+    
+    .text {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .text h3 {
+        font-size: var(--h3-font);
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+    
+    .text p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.6;
+        color: #ffffffab;
+        margin-bottom: 35px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 13px 40px;
+        background: var(--main-color);
+        color: #000;
+        font-size: 15px;
+        font-weight: 600;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn:hover {
+        color: #ccc;
+        background: transparent;
+        border: 2px solid var(--main-color);
+        transform: translateX(5px);
+    }
+    
+    .btn:hover::before {
+        width: 100%;
+    }
+    
+    @media (max-width: 1200px) {
+        header {
+            padding: 20px 5%;
+        }
+        .container {
+            grid-template-columns: 1fr;
+        }
+        .text h3 {
+            font-size: var(--h3-font);
+        }
+    }
+    
+    @media (max-width: 800px) {
+        header {
+            padding: 18px 3%;
+        }
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        :root {
+            --h1-font: 4rem;
+            --h2-font: 2.5rem;
+            --h3-font: 1.8rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Popular Tours here in Sorsogon</h2>
+        <p>Explore the breathtaking landscapes and natural attractions that make Sorsogon a paradise for nature lovers.</p>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="image">
+                <img src="New folder/Subic-Beach1.jpg">
+            </div>
+            <div class="text">
+                <h3>Subic beach</h3>
+                <p>Subic Beach is a beautiful beach in Sorsogon characterized by a considerable stretch of white-pinkish sand, crystal clear sea water and verdant greenery along the shores. 
+                    At daylight, the pinkish sand is just and illusion created by the red coral fragments mixed with the white sand. There are actually 2 Subic Beaches, the Subic Laki (Big Subic) and Subic Liit (Small Subic) separated by a short stretch of land. From the names themselves, Subic Laki is bigger but crowded while the other is the opposite one. 
+                    This is one of the island hopping destinations where visitors can stay/camp overnight.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="New folder/Dancalan1.jpg">
+            </div>
+            <div class="text">
+                <h3>Dancalan beach</h3>
+                <p>Dancalan Beach is nestled on the shoreline of Bulusan Municipality. This beach is clean, wide, and has gray/off-white colored sand. Dancalan can easily get overlooked by tourists, but it is popular among locals.
+
+                    Dancalan has a rustic look and feel. It features pleasant countryside scenery. Just right in front of this Sorsogon beach lies a vast rice field. Towering mountains in the distance serve as a picturesque backdrop to Dancalan. 
+                    
+                    Dancalan Beach is an excellent swimming beach for children as it remains shallow (1-2 feet) even at about 40 meters from the shoreline. There is a minimal entrance fee to the beach, and you can also rent open-air nipa huts for a reasonable price. It is also quite common for visitors to pitch a tent on the beach. </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="New folder/Things-to-do-in-Sorsogon-Paguriran-Island-and-Lagoon.jpg">
+            </div>
+            <div class="text">
+                <h3>Paguriran Island and Lagoon</h3>
+                <p>Paguriran Island and Lagoon is one of the natural wonders of Sorsogon. Travel guides best describe it as a lagoon in the middle of the ocean. Strictly speaking, Paguriran is not an island but more like a large rocky formation out in the sea. Despite being surrounded by water, Paguriran is within walking distance from a sandy shore. You can walk to it during low tide or even high tide when the water level is usually waist-high.
+
+                    The tourism highlight of Paguriran is its lagoon that occupies the hollow middle portion of the rocky islet. The water in this lagoon reflects a clear aquamarine color, which is considered world-class. The jumping point to Paguriran Island is Barangay Sawangga, Bacon. From Sorsogon City, you can ride a jeepney or a tricycle to the town of Bacon. </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="New folder/RIZAL BEACH .jpg">
+            </div>
+            <div class="text">
+                <h3>Rizal beach</h3>
+                <p>Situated in the municipality of Gubat, Rizal is one of the gorgeous Sorsogon beach sites that have remained underdeveloped. This beach is admired for its clear blue waters and golden-colored sand. 
+
+                    Rizal Beach is nestled right at the center of a cove, about 5 kilometers from the main town of Gubat. It is a wide beach with a long shoreline. Rizal is often clean and well-maintained. During your visit, you can rent out wooden cottages or stay under the surrounding trees for some shade.
+                    
+                    Many people consider Rizal Beach Sorsogon one of the best beaches in the Bicol region because of its raw beauty. Locals love to swim and hang out on this beach, especially in the afternoon. </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="New folder/whale-shark-in-donsol-sorsogon.jpg">
+            </div>
+            <div class="text">
+                <h3>Donsol whale sharks</h3>
+                <p>Donsol is Sorsogon’s most popular destination as it is world-famous for swimming with whale sharks. It's one of the best places where you can swim with whale sharks in the Philippines. Several whale sharks (locally called butanding) naturally congregate around Donsol waters from December to May. Donsol practices responsible eco-tourism that does not alter the behavior of whale sharks. The local guides do not feed these animals for the sake of attracting them to the shore. 
+                    Usually, tourists need to sign up for a snorkeling boat tour to see the whale sharks in action. This Donsol whale shark tour boat will take passengers to the whale shark interaction area. The whale shark tour guide will teach you how to jump into the water and interact with the whale sharks. Swimming with whale sharks is considered a safe activity as these sea animals are known to be friendly and gentle.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image">
+                <img src="New folder/bagatao-island-lighthouse.jpg">
+            </div>
+            <div class="text">
+                <h3>Bagatao Island Lighthouse</h3>
+            <p>Bagatao Island Lighthouse is a historic lighthouse located on Bagatao Island on the eastern side of the entrance to Sorsogon Bay, in the province of Sorsogon in the Philippines. The 29-foot (8.8 m) white cylindrical iron tower is situated on the rocky headland that forms the southern point in the western end of the Island, giving the total light elevation of 135 feet (41 m). The light not only marks the entrance to the bay, but also assists ships in navigating the bend around Ticao Island of Masbate province as they head to San Bernardino Strait and exit to the Pacific Ocean.
+            </p></div>
+        </div>
+
+        <div class="container">
+            <div class="image">
+                <img src="New folder/296726286_3040750089550564_3062137305957064952_n2.jpg">
+            </div>
+            <div class="text">
+                <h3>Tikling Island</h3>
+                <p>Tikling Island is located off the coast of the town of Matnog, Sorsogon. It is named after a bird species that frequent the area. 
+                    The privately-owned island exudes a serene ambiance as it does not have a resort or any commercial structure on it. 
+                    You can visit it as part of a Sorsogon island hopping tour.
+                    Visitors come to Tikling Island Sorsogon to enjoy its powdery sand beach, which features a white and pinkish color. Pink beaches are rare to find, and 
+                    Tikling has managed to maintain the raw beauty. Forests and lush vegetation fringe Tikling Island. The surrounding water here reflects an aquamarine color. 
+                    It remains clear even if you go several meters from the shoreline. Another outstanding feature of Tikling is its rock formations located at the other end of the island. </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image">
+                <img src="New folder/mangrove.jpg">
+            </div>
+            <div class="text">
+                <h3>Prieto Diaz Mangrove Forest</h3>
+                <p>The Prieto Diaz Mangrove Forest is a stunning ecosystem brimming with mangrove trees and abundant wildlife. Embark on a tranquil boat tour through the mangrove channels, observe diverse bird species, and learn about the importance of mangroves in coastal conservation. The mangrove forest offers a serene escape and a chance to connect with nature.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image">
+                <img src="New folder/bulusan2.jpg">
+            </div>
+            <div class="text">
+                <h3>Bulusan Volcano and Lake</h3>
+                <p>Bulusan Volcano Natural Park is a treasured natural wonder and one of the most recognized Bicol tourist spots. 
+                    This protected natural park covers rainforests, grassland, hot springs gardens, and farmland. 
+                    The park is also home to the famous Bulusan Volcano, a popular trekking destination in Luzon.
+                    Aside from the Bulusan Volcano, the park consists of other mountains like Sharp Peak Mountain and Hormahan Mountain. 
+                    Within the park, you will also find the beautiful Lake Aguinay and Bulusan Lake. Bulusan Lake is a well-known kayaking spot because of its relaxing atmosphere, fresh air, 
+                    and gorgeous views of the lush landscapes and mountains in the distance.
+                    You can find the Bulusan Natural Park entrance just off the Pan-Philippine Highway, between Bulusan and Irosin town.
+                </p>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn">Home</a>
+    </section>
+</body>
+</html>
